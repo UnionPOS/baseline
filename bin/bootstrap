@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+
+# allow for automated install of xcode cli tools and git clone of baseline repo
+
+set -o errtrace
+set -o functrace
+set -o errexit
+set -o nounset
+set -o pipefail
+
+
+if [ "$(uname -s)" == "Darwin" ]
+then
+  echo ""
+  echo "#######################################################################"
+  echo "ensuring xcode-cli tools are available"
+  echo "#######################################################################"
+  if ! xcode-select --print-path &> /dev/null; then
+
+      # Prompt user to install the XCode Command Line Tools
+      xcode-select --install &> /dev/null
+
+      # Wait until the XCode Command Line Tools are installed
+      until xcode-select --print-path &> /dev/null; do
+          sleep 5
+      done
+      echo 'XCode Command Line Tools Installed'
+  fi
+fi
+
+echo ""
+echo "#######################################################################"
+echo "clone or update baseline repo"
+echo "#######################################################################"
+if [ -d  "${HOME}/baseline" ]
+then
+  # baseline repo clone exists.. update
+  ( cd "${HOME}/baseline" || exit; git pull --rebase )
+else
+  # clone baseline repo
+  git clone https://github.com/UnionPOS/baseline "${HOME}/baseline"
+fi
+
+echo ""
+echo "#######################################################################"
+echo "initialize baseline build harness"
+echo "#######################################################################"
+make -C "${HOME}/baseline" init
+
+echo ""
+echo "#######################################################################"
+echo "execute baseline bootstrap"
+echo "#######################################################################"
+make -C "${HOME}/baseline" bootstrap
+
+echo ""
+echo "#######################################################################"
+echo "bootstrap complete"
+echo "#######################################################################"
+echo "close and reopen terminal session before continuing"

@@ -1,0 +1,5 @@
+# ignore build harness
+*build-harness
+
+# local vars
+.vars

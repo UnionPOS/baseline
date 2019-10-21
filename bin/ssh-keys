@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+# set -x
+
+# find script location
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# ensure build harness has been initialized
+if [[ ! -d "${DIR}/../build-harness/bashlib" ]]; then make init; fi
+# shellcheck source=./../build-harness/bashlib/bashopts.sh
+source "${DIR}/../build-harness/bashlib/bashopts.sh"
+# shellcheck source=./../build-harness/bashlib/bashui.sh
+source "${DIR}/../build-harness/bashlib/bashui.sh"
+
+function usage() {
+  cat <<- EOF
+
+  create SSH Keys for user
+
+  usage: $0 <email>
+
+    email: <your-name>@union-pos.com
+
+EOF
+}
+
+function is_valid_email() {
+  local address=${1:-}
+
+  regex="^[a-z0-9!#\$%&'*+/=?^_\`{|}~-]+(\.[a-z0-9!#$%&'*+/=?^_\`{|}~-]+)*@union-pos.com?\$"
+
+  if [[ ! $address =~ $regex ]] ; then
+      die "invalid email address"
+  fi
+}
+
+function main() {
+  for f in $HOME/.ssh/id_rsa*; do
+      ## Check if the glob gets expanded to existing files.
+      ## If not, f here will be exactly the pattern above
+      ## and the exists test will evaluate to false.
+      if [ ! -f "$f" ]; then
+        ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -q -N "" -C "$EMAIL"; ok
+        # Then add your new key to the ssh-agent:
+        # start the ssh-agent in the background
+        eval "$(ssh-agent -s)"; ok
+        ssh-add ~/.ssh/id_rsa; ok
+      fi
+
+      break
+  done
+
+  for f in $HOME/.ssh/id_ed25519*; do
+      ## Check if the glob gets expanded to existing files.
+      ## If not, f here will be exactly the pattern above
+      ## and the exists test will evaluate to false.
+      if [ ! -f "$f" ]; then
+        ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -q -N "" -C "$EMAIL"; ok
+        # Then add your new key to the ssh-agent:
+        # start the ssh-agent in the background
+        eval "$(ssh-agent -s)"; ok
+        ssh-add ~/.ssh/id_ed25519; ok
+      fi
+
+      break
+  done
+}
+
+[ "$#" -lt 1 ] && usage && die
+
+EMAIL=${1:-}
+
+is_valid_email ${1:-}
+
+main "$@"

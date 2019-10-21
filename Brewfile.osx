@@ -1,0 +1,41 @@
+
+# CLI for managing secrets
+# https://github.com/segmentio/chamber
+brew "chamber"
+
+# direnv is an environment switcher for the shell.
+# https://direnv.net
+brew "direnv"
+
+# Python version management
+# https://github.com/pyenv/pyenv
+brew "pyenv"
+
+# Pyenv plugin to manage virtualenv
+# https://github.com/pyenv/pyenv-virtualenv
+brew "pyenv-virtualenv"
+
+#########################
+# GUI Applications
+#########################
+
+# A vault for securely storing and accessing AWS credentials
+# https://github.com/99designs/aws-vault
+cask "aws-vault"
+
+# https://www.docker.com/community-edition
+cask "docker"
+
+# Google Chrome web Browser
+# https://www.google.com/chrome/
+cask "google-chrome"
+
+# https://keybase.io
+cask "keybase"
+
+# slack team chat https://slack.com
+cask "slack"
+
+# VPN client
+# https://www.tunnelblick.net
+cask "tunnelblick"

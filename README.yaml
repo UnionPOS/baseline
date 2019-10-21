@@ -1,0 +1,38 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: Baseline
+
+# Short description of this project
+description: |-
+  UNION POS baseline provisioning of OSX workstations
+
+# Canonical GitHub repo
+github_repo: UnionPOS/baseline
+
+# How to get started quickly
+quickstart: |-
+  On a fresh mac you won't have git or other required dependencies installed..
+  open a Terminal and run...
+
+  ```sh
+  curl https://raw.githubusercontent.com/UnionPOS/baseline/master/bin/bootstrap | bash
+  ```
+
+usage: |-
+  the slower start
+
+  1. `git clone https://github.com/UnionPOS/baseline` to pull down the repository
+  1. `make init` to initialize the [`build-harness`](https://github.com/UnionPOS/build-harness/)
+  1. `make bootstrap` to initialize project dependencies
+
+  this script does the following
+
+  - install XCode Command Line Tools
+  - create a git clone of this repo in your home directory
+  - install Homebrew package manager
+  - install other baseline applications using homebrew (see Brewfile.osx)
