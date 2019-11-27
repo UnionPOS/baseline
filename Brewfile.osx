@@ -1,7 +1,8 @@
+# python version 2
+brew "python2"
 
-# CLI for managing secrets
-# https://github.com/segmentio/chamber
-brew "chamber"
+# python version 3
+brew "python"
 
 # direnv is an environment switcher for the shell.
 # https://direnv.net
@@ -15,11 +16,9 @@ brew "pyenv"
 # https://github.com/pyenv/pyenv-virtualenv
 brew "pyenv-virtualenv"
 
-# python version 2
-brew "python2"
-
-# python version 3
-brew "python"
+# CLI for managing secrets
+# https://github.com/segmentio/chamber
+brew "chamber"
 
 #########################
 # GUI Applications
