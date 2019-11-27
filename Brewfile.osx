@@ -15,6 +15,12 @@ brew "pyenv"
 # https://github.com/pyenv/pyenv-virtualenv
 brew "pyenv-virtualenv"
 
+# python version 2
+brew "python2"
+
+# python version 3
+brew "python"
+
 #########################
 # GUI Applications
 #########################
