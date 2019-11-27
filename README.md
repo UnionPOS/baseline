@@ -41,7 +41,19 @@ this script does the following
 - install XCode Command Line Tools
 - create a git clone of this repo in your home directory
 - install Homebrew package manager
-- install other baseline applications using homebrew (see Brewfile.osx)---
+- install other baseline applications using homebrew
+  - aws-vault - https://github.com/99designs/aws-vault
+  - chamber - https://github.com/segmentio/chamber
+  - direnv - https://direnv.net
+  - docker - https://www.docker.com/community-edition
+  - google-chrome - https://www.google.com/chrome/
+  - keybase - https://keybase.io
+  - pyenv - https://github.com/pyenv/pyenv
+  - pyenv-virtualenv - https://github.com/pyenv/pyenv-virtualenv
+  - python 2
+  - python 3
+  - Slack - https://slack.com
+  - Tunnelblick - https://www.tunnelblick.net---
 
 ## Contributing
 
