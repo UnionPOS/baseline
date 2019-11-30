@@ -9,9 +9,8 @@
   **
 
   -->
+
 # Baseline
-
-
 
 UNION POS baseline provisioning of OSX workstations
 
@@ -23,10 +22,6 @@ open a Terminal and run...
 ```sh
 curl https://raw.githubusercontent.com/UnionPOS/baseline/master/bin/bootstrap | bash
 ```
-
-
-
-
 
 ## Usage
 
@@ -45,19 +40,21 @@ this script does the following
 - install CLI applications using homebrew
   - python 2
   - python 3
-  - chamber - https://github.com/segmentio/chamber
-  - direnv - https://direnv.net
-  - pyenv - https://github.com/pyenv/pyenv
-  - pyenv-virtualenv - https://github.com/pyenv/pyenv-virtualenv
+  - [chamber](https://github.com/segmentio/chamber)
+  - [direnv](https://direnv.net)
+  - [pyenv](https://github.com/pyenv/pyenv)
+  - [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
 
 - install GUI applications
-  - aws-vault - https://github.com/99designs/aws-vault
-  - docker - https://www.docker.com/community-edition
-  - google-chrome - https://www.google.com/chrome/
-  - keybase - https://keybase.io
-  - Slack - https://slack.com
-  - Tunnelblick - https://tunnelblick.net
-  - ZeroTier - https://zerotier.com## Contributing
+  - [aws-vault](https://github.com/99designs/aws-vault)
+  - [Docker](https://www.docker.com/community-edition)
+  - [Google Chrome](https://www.google.com/chrome/)
+  - [Keybase](https://keybase.io)
+  - [Slack](https://slack.com)
+  - [Tunnelblick](https://tunnelblick.net)
+  - [ZeroTier](https://zerotier.com)
+
+## Contributing
 
 ### Bug Reports & Feature Requests
 
