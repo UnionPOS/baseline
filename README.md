@@ -35,7 +35,7 @@ this script does the following
 
 - install XCode Command Line Tools
 - create a git clone of this repo in your home directory
-- install Homebrew package manager https://brew.sh
+- install [Homebrew package manager](https://brew.sh)
 
 - install CLI applications using homebrew
   - python 2
