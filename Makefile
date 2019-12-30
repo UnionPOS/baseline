@@ -8,7 +8,7 @@ DOTFILES := $(addprefix ~/, $(DOTFILE_NAMES))
 
 ## install project requirements
 bootstrap: init .vars
-	make brew
+	-make brew
 	pip install virtualenv
 	make dotfiles
 	make packages/install/zerotier
