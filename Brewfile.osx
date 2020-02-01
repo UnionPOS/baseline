@@ -4,6 +4,10 @@ brew "python2"
 # python version 3
 brew "python"
 
+# Official Amazon AWS command-line interface
+# https://aws.amazon.com/cli/
+brew "awscli"
+
 # direnv is an environment switcher for the shell.
 # https://direnv.net
 brew "direnv"
