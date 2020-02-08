@@ -46,6 +46,9 @@ cask "google-chrome"
 # https://keybase.io
 cask "keybase"
 
+# https://sequelpro.com
+cask "sequel-pro"
+
 # slack team chat https://slack.com
 cask "slack"
 
