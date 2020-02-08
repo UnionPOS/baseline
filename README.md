@@ -50,6 +50,7 @@ this script does the following
   - [Docker](https://www.docker.com/community-edition)
   - [Google Chrome](https://www.google.com/chrome/)
   - [Keybase](https://keybase.io)
+  - [SequelPro](https://https://www.sequelpro.com/)
   - [Slack](https://slack.com)
   - [Tunnelblick](https://tunnelblick.net)
   - [ZeroTier](https://zerotier.com)
