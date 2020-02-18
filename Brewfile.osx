@@ -52,3 +52,7 @@ cask "slack"
 # VPN client
 # https://www.tunnelblick.net
 cask "tunnelblick"
+
+# Visual Studio Code Editor
+# https://code.visualstudio.com/
+cask "visual-studio-code"
