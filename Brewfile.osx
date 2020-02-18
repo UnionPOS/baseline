@@ -5,6 +5,10 @@ brew "python"
 # https://aws.amazon.com/cli/
 brew "awscli"
 
+# CLI for managing secrets
+# https://github.com/segmentio/chamber
+brew "chamber"
+
 # direnv is an environment switcher for the shell.
 # https://direnv.net
 brew "direnv"
@@ -20,10 +24,6 @@ brew "pyenv-virtualenv"
 # NodeJS Version Manager
 # - POSIX-compliant bash script to manage multiple active node.js versions
 brew "nvm"
-
-# CLI for managing secrets
-# https://github.com/segmentio/chamber
-brew "chamber"
 
 #########################
 # GUI Applications
