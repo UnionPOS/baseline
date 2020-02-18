@@ -25,6 +25,10 @@ brew "pyenv-virtualenv"
 # - POSIX-compliant bash script to manage multiple active node.js versions
 brew "nvm"
 
+# cli multifactor tool
+# https://github.com/unionpos/mfa
+brew "unionpos/tap/mfa"
+
 #########################
 # GUI Applications
 #########################
