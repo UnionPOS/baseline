@@ -29,6 +29,14 @@ packages/install/zerotier:
 	sudo installer -pkg ~/Downloads/ZeroTierOne.pkg -target /
 .PHONY: packages/install/zerotier
 
+sudo/noprompt:
+	echo "$(shell whoami) ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$(shell whoami)
+.PHONY: sudo/noprompt
+
+sudo/prompt:
+	sudo rm -rf /etc/sudoers.d/$(shell whoami)
+.PHONY: sudo/prompt
+
 ## clean and install build harness code
 update: clean-build-harness
 	git pull
