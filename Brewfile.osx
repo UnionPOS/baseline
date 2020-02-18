@@ -49,6 +49,9 @@ cask "sequel-pro"
 # slack team chat https://slack.com
 cask "slack"
 
+# https://www.spectacleapp.com/
+cask "spectacle"
+
 # VPN client
 # https://www.tunnelblick.net
 cask "tunnelblick"
