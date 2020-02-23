@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+##############################################################################
+# Z Shell Plugins Configuration
+##############################################################################
+
+# https://github.com/unixorn/awesome-zsh-plugins#antibody
+source <(antibody init)
+
+#
+# baseline zsh plugins
+#
+
+# Fish-like autosuggestions for zsh
+antibody bundle zsh-users/zsh-autosuggestions
+
+# Additional completion definitions for Zsh.
+antibody bundle zsh-users/zsh-completions
+
+# ZSH port of Fish history search (up arrow)
+antibody bundle zsh-users/zsh-history-substring-search
+
+# Fish shell like syntax highlighting for Zsh.
+antibody bundle zsh-users/zsh-syntax-highlighting
+
+#
+# load machine specific configuration
+#
+[ -f "$0.local" ] && source "$0.local"

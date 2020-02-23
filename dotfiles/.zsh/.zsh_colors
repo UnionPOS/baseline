@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC1090
 
 ##############################################################################
-# Import the shell-agnostic config into zsh
+# Z Shell Colors Configuration
 ##############################################################################
-source ~/.profile
+
+autoload colors && colors
+
+#
+# load machine specific configuration
+#
+[ -f "$0.local" ] && source "$0.local"

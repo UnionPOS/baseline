@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+##############################################################################
+# Z Shell Prompt Configuration
+##############################################################################
+
+# Enable parameter expansion, command substitution, and arithmetic expansion in the prompt
+setopt PROMPT_SUBST
+
+unsetopt MENU_COMPLETE
+setopt AUTO_MENU
+
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+
+#
+# load machine specific configuration
+#
+[ -f "$0.local" ] && source "$0.local"

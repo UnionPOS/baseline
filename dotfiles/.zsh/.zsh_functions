@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+##############################################################################
+# Z Shell Functions Configuration
+##############################################################################
+
+# From http://dotfiles.org/~_why/.zshrc
+# Sets the window title nicely no matter where you are
+function title() {
+  # escape '%' chars in $1, make nonprintables visible
+  a=${(V)1//\%/\%\%}
+
+  # Truncate command, and join lines.
+  a=$(print -Pn "%40>...>$a" | tr -d "\n")
+
+  case $TERM in
+  screen)
+    print -Pn "\ek$a:$3\e\\" # screen title (in ^A")
+    ;;
+  xterm*|rxvt)
+    print -Pn "\e]2;$2\a" # plain xterm title ($3 for pwd)
+    ;;
+  esac
+}
+
+function zsh_recompile {
+  autoload -U zrecompile
+  rm -f ~/.zsh/*.zwc
+  [[ -f ~/.zshrc ]] && zrecompile -p ~/.zshrc
+  [[ -f ~/.zshrc.zwc.old ]] && rm -f ~/.zshrc.zwc.old
+
+  for f in ~/.zsh/**/*.zsh; do
+    [[ -f $f ]] && zrecompile -p $f
+    [[ -f $f.zwc.old ]] && rm -f $f.zwc.old
+  done
+
+  [[ -f ~/.zcompdump ]] && zrecompile -p ~/.zcompdump
+  [[ -f ~/.zcompdump.zwc.old ]] && rm -f ~/.zcompdump.zwc.old
+
+  source ~/.zshrc
+}
+
+#
+# load machine specific configuration
+#
+[ -f "$0.local" ] && source "$0.local"

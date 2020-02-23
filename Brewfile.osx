@@ -1,6 +1,14 @@
 # python version 3
 brew "python"
 
+tap "getantibody/tap"
+# The fastest z shell plugin manager http://getantibody.github.io
+brew "antibody"
+
+# A cd command that learns - easily navigate directories from the command line
+# https://github.com/wting/autojump
+brew "autojump"
+
 # Official Amazon AWS command-line interface
 # https://aws.amazon.com/cli/
 brew "awscli"
@@ -32,6 +40,7 @@ brew "unionpos/tap/mfa"
 #########################
 # GUI Applications
 #########################
+tap "homebrew/cask"
 
 # A vault for securely storing and accessing AWS credentials
 # https://github.com/99designs/aws-vault

@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+##############################################################################
+# Z Shell Autocomplete Configuration
+##############################################################################
+
+# Allow completion from within a word/phrase
+setopt COMPLETE_IN_WORD
+
+# When completing from the middle of a word, move the cursor to the end of the word
+setopt ALWAYS_TO_END
+
+ZCOMPDUMPFILE="$ZDOTCACHEDIR/.zcompdump-$ZSH_VERSION"
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit -d "$ZCOMPDUMPFILE" -C 
+_comp_options+=(globdots) # Include hidden files.
+
+#
+# load machine specific configuration
+#
+[ -f "$0.local" ] && source "$0.local"
