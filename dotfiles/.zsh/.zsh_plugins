@@ -11,17 +11,34 @@ source <(antibody init)
 # baseline zsh plugins
 #
 
+# extract function supporting multiple archive formats
+# https://github.com/russelltsherman/zsh-extract
+antibody bundle russelltsherman/zsh-extract
+
+# easily see what's happening with your ports 
+# https://github.com/russelltsherman/zsh-ports
+antibody bundle russelltsherman/zsh-ports # kind:path
+
+# add color to man pages
+# https://github.com/russelltsherman/zsh-solarized-man
+antibody bundle russelltsherman/zsh-solarized-man
+
 # Fish-like autosuggestions for zsh
+# https://github.com/zsh-users/zsh-autosuggestions
 antibody bundle zsh-users/zsh-autosuggestions
 
 # Additional completion definitions for Zsh.
+# https://github.com/zsh-users/zsh-completions
 antibody bundle zsh-users/zsh-completions
 
 # ZSH port of Fish history search (up arrow)
+# https://github.com/zsh-users/zsh-history-substring-search
 antibody bundle zsh-users/zsh-history-substring-search
 
 # Fish shell like syntax highlighting for Zsh.
+# https://github.com/zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-syntax-highlighting
+
 
 #
 # load machine specific configuration

@@ -21,6 +21,10 @@ brew "chamber"
 # https://direnv.net
 brew "direnv"
 
+# add support for 7z archive format
+# https://www.7-zip.org/
+brew "p7zip"
+
 # Python version management
 # https://github.com/pyenv/pyenv
 brew "pyenv"
@@ -36,6 +40,10 @@ brew "nvm"
 # cli multifactor tool
 # https://github.com/unionpos/mfa
 brew "unionpos/tap/mfa"
+
+# Extract, view, and test RAR archives
+# https://www.rarlab.com/
+brew "unrar"
 
 #########################
 # GUI Applications
