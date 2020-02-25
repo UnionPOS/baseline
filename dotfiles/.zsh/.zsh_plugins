@@ -11,6 +11,22 @@ source <(antibody init)
 # baseline zsh plugins
 #
 
+# plugin enhances the terminal environment with 256 colors
+# https://github.com/russelltsherman/zsh-256color
+antibody bundle russelltsherman/zsh-256color
+
+# your terminal should be able to perform tasks asynchronously without external tools!
+# https://github.com/russelltsherman/zsh-async
+antibody bundle russelltsherman/zsh-async
+
+# Quickly go back to a specific parent directory
+# https://github.com/russelltsherman/zsh-bd
+antibody bundle russelltsherman/zsh-bd
+
+# command aliases for docker
+# https://github.com/russelltsherman/zsh-docker-aliases
+antibody bundle russelltsherman/zsh-docker-aliases
+
 # extract function supporting multiple archive formats
 # https://github.com/russelltsherman/zsh-extract
 antibody bundle russelltsherman/zsh-extract
