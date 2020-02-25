@@ -11,7 +11,7 @@ brew "autojump"
 
 # Official Amazon AWS command-line interface
 # https://aws.amazon.com/cli/
-brew "awscli"
+brew "awscli@1"
 
 # CLI for managing secrets
 # https://github.com/segmentio/chamber
