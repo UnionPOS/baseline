@@ -21,6 +21,10 @@ brew "chamber"
 # https://direnv.net
 brew "direnv"
 
+# note taking and to-do cli app with synchronisation capabilities
+# https://joplinapp.org/
+brew "joplin"
+
 # add support for 7z archive format
 # https://www.7-zip.org/
 brew "p7zip"
@@ -60,6 +64,10 @@ cask "docker"
 # Google Chrome web Browser
 # https://www.google.com/chrome/
 cask "google-chrome"
+
+# note taking and to-do gui app with synchronisation capabilities
+# https://joplinapp.org/
+cask "joplin"
 
 # https://keybase.io
 cask "keybase"
