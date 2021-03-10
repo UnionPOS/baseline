@@ -22,8 +22,8 @@ brew "chamber"
 brew "direnv"
 
 # note taking and to-do cli app with synchronisation capabilities
-# https://joplinapp.org/
-brew "joplin"
+# https://aoplinapp.org/
+cask "joplin"
 
 # add support for 7z archive format
 # https://www.7-zip.org/
@@ -47,7 +47,7 @@ brew "unionpos/tap/mfa"
 
 # Extract, view, and test RAR archives
 # https://www.rarlab.com/
-brew "unrar"
+brew "carlocab/personal/unrar"
 
 #########################
 # GUI Applications

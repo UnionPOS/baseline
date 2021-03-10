@@ -10,7 +10,7 @@ DOTFILES := $(addprefix ~/, $(DOTFILE_NAMES))
 bootstrap: init .vars
 	-make brew
 	sudo easy_install pip
-	pip install virtualenv
+	pip3 install virtualenv
 	make dotfiles
 	make packages/install/zerotier
 .PHONY: bootstrap
