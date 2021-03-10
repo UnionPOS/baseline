@@ -23,7 +23,7 @@ brew "direnv"
 
 # note taking and to-do cli app with synchronisation capabilities
 # https://joplinapp.org/
-brew "joplin"
+cask "joplin"
 
 # add support for 7z archive format
 # https://www.7-zip.org/
