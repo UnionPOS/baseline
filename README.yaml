@@ -54,3 +54,6 @@ usage: |-
     - [Slack](https://slack.com)
     - [Tunnelblick](https://tunnelblick.net)
     - [ZeroTier](https://zerotier.com)
+
+troubleshooting: |-
+  if you are getting libcouchbase (NOT libcouchbase@2 ) errors run `"brew unlink 'libcouchbase"`. don't unlink libcouchbase@2
