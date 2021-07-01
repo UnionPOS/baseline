@@ -43,6 +43,7 @@ usage: |-
     - [direnv](https://direnv.net)
     - [pyenv](https://github.com/pyenv/pyenv)
     - [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
+    - [libCouchBase@2](https://github.com/couchbase/libcouchbase/tree/release-2.10)
 
   - install GUI applications
     - [aws-vault](https://github.com/99designs/aws-vault)
