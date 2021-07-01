@@ -49,6 +49,10 @@ brew "unionpos/tap/mfa"
 # https://www.rarlab.com/
 brew "carlocab/personal/unrar"
 
+# Couchbase client
+# https://github.com/couchbase/libcouchbase/tree/release-2.10
+brew "libcouchbase@2"
+
 #########################
 # GUI Applications
 #########################
