@@ -53,6 +53,10 @@ brew "carlocab/personal/unrar"
 # https://github.com/couchbase/libcouchbase/tree/release-2.10
 brew "libcouchbase@2"
 
+# enchant C library - used for misspelling detection
+# https://github.com/pyenchant/pyenchant
+brew "enchant"
+
 #########################
 # GUI Applications
 #########################
