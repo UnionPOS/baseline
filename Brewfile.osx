@@ -1,14 +1,3 @@
-# python version 3
-brew "python"
-
-tap "getantibody/tap"
-# The fastest z shell plugin manager http://getantibody.github.io
-brew "antibody"
-
-# A cd command that learns - easily navigate directories from the command line
-# https://github.com/wting/autojump
-brew "autojump"
-
 # Official Amazon AWS command-line interface
 # https://aws.amazon.com/cli/
 brew "awscli@1"
@@ -20,10 +9,6 @@ brew "chamber"
 # direnv is an environment switcher for the shell.
 # https://direnv.net
 brew "direnv"
-
-# note taking and to-do cli app with synchronisation capabilities
-# https://aoplinapp.org/
-cask "joplin"
 
 # add support for 7z archive format
 # https://www.7-zip.org/
@@ -37,17 +22,9 @@ brew "pyenv"
 # https://github.com/pyenv/pyenv-virtualenv
 brew "pyenv-virtualenv"
 
-# NodeJS Version Manager
-# - POSIX-compliant bash script to manage multiple active node.js versions
-brew "node"
-
 # cli multifactor tool
 # https://github.com/unionpos/mfa
 brew "unionpos/tap/mfa"
-
-# Extract, view, and test RAR archives
-# https://www.rarlab.com/
-brew "carlocab/personal/unrar"
 
 # Couchbase client
 # https://github.com/couchbase/libcouchbase/tree/release-2.10
@@ -62,19 +39,9 @@ tap "homebrew/cask"
 # https://github.com/99designs/aws-vault
 cask "aws-vault"
 
-# https://www.docker.com/community-edition
-cask "docker"
-
 # Google Chrome web Browser
 # https://www.google.com/chrome/
 cask "google-chrome"
-
-# note taking and to-do gui app with synchronisation capabilities
-# https://joplinapp.org/
-cask "joplin"
-
-# https://keybase.io
-cask "keybase"
 
 # https://sequelpro.com
 cask "sequel-pro"
@@ -82,13 +49,6 @@ cask "sequel-pro"
 # slack team chat https://slack.com
 cask "slack"
 
-# https://www.spectacleapp.com/
-cask "spectacle"
-
 # VPN client
 # https://www.tunnelblick.net
 cask "tunnelblick"
-
-# Visual Studio Code Editor
-# https://code.visualstudio.com/
-cask "visual-studio-code"
