@@ -57,6 +57,10 @@ brew "libcouchbase@2"
 # https://github.com/pyenchant/pyenchant
 brew "enchant"
 
+# Git LFS - Git Large File Storage
+# https://git-lfs.github.com/
+brew "git-lfs"
+
 #########################
 # GUI Applications
 #########################
