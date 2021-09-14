@@ -9,10 +9,9 @@ DOTFILES := $(addprefix ~/, $(DOTFILE_NAMES))
 ## install project requirements
 bootstrap: init .vars
 	-make brew
-	sudo easy_install pip
+	sudo python -m ensurepip --upgrade
 	pip3 install virtualenv
 	make dotfiles
-	make packages/install/zerotier
 .PHONY: bootstrap
 
 ## remove existing dotfile symlinks
@@ -24,11 +23,6 @@ cleandotfiles:
 dotfiles: cleandotfiles \
 	$(DOTFILES) # iterate our list of dotfiles and ensure they are symlinked
 .PHONY: dotfiles
-
-packages/install/zerotier:
-	curl https://download.zerotier.com/dist/ZeroTier%20One.pkg --output ~/Downloads/ZeroTierOne.pkg
-	sudo installer -pkg ~/Downloads/ZeroTierOne.pkg -target /
-.PHONY: packages/install/zerotier
 
 sudo/noprompt:
 	echo "$(shell whoami) ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$(shell whoami)
