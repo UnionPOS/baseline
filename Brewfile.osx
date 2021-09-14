@@ -1,3 +1,6 @@
+# Python
+brew "python"
+
 # Official Amazon AWS command-line interface
 # https://aws.amazon.com/cli/
 brew "awscli@1"

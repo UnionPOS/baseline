@@ -14,6 +14,10 @@ description: |-
 # Canonical GitHub repo
 github_repo: UnionPOS/baseline
 
+# Specific docker version
+docker: |-
+  You will need to manually install Docker version 2.2.0.5 You can get the dmg file here (Docker 2.2.0.5)[https://docs.docker.com/desktop/mac/previous-versions/#docker-desktop-community-2205]
+
 # How to get started quickly
 quickstart: |-
   On a fresh mac you won't have git or other required dependencies installed..
@@ -37,8 +41,6 @@ usage: |-
   - install [Homebrew package manager](https://brew.sh)
 
   - install CLI applications using homebrew
-    - python 2
-    - python 3
     - [chamber](https://github.com/segmentio/chamber)
     - [direnv](https://direnv.net)
     - [pyenv](https://github.com/pyenv/pyenv)
@@ -47,13 +49,10 @@ usage: |-
 
   - install GUI applications
     - [aws-vault](https://github.com/99designs/aws-vault)
-    - [Docker](https://www.docker.com/community-edition)
     - [Google Chrome](https://www.google.com/chrome/)
-    - [Keybase](https://keybase.io)
     - [SequelPro](https://https://www.sequelpro.com/)
     - [Slack](https://slack.com)
     - [Tunnelblick](https://tunnelblick.net)
-    - [ZeroTier](https://zerotier.com)
 
 troubleshooting: |-
   if you are getting libcouchbase (NOT libcouchbase@2 ) errors run `"brew unlink 'libcouchbase"`. don't unlink libcouchbase@2
