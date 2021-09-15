@@ -23,6 +23,19 @@ open a Terminal and run...
 curl https://raw.githubusercontent.com/UnionPOS/baseline/master/bin/bootstrap | bash
 ```
 
+## Docker
+
+You will need to manually install Docker version 2.2.0.5 You can get the
+dmg file here [Docker 2.2.0.5](https://docs.docker.com/desktop/mac/previous-versions/#docker-desktop-community-2205)
+
+## Troubleshooting
+
+If your system already has tooling such as Docker you will need to
+uninstall them before running the quickstart otherwise it will fail
+
+if you are getting libcouchbase (NOT libcouchbase@2 ) errors run `"brew unlink 'libcouchbase"`. don't unlink libcouchbase@2
+
+
 ## Usage
 
 the slower start
@@ -38,22 +51,18 @@ this script does the following
 - install [Homebrew package manager](https://brew.sh)
 
 - install CLI applications using homebrew
-  - python 2
-  - python 3
   - [chamber](https://github.com/segmentio/chamber)
   - [direnv](https://direnv.net)
   - [pyenv](https://github.com/pyenv/pyenv)
   - [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
+  - [libCouchBase@2](https://github.com/couchbase/libcouchbase/tree/release-2.10)
 
 - install GUI applications
   - [aws-vault](https://github.com/99designs/aws-vault)
-  - [Docker](https://www.docker.com/community-edition)
   - [Google Chrome](https://www.google.com/chrome/)
-  - [Keybase](https://keybase.io)
   - [SequelPro](https://https://www.sequelpro.com/)
   - [Slack](https://slack.com)
   - [Tunnelblick](https://tunnelblick.net)
-  - [ZeroTier](https://zerotier.com)
 
 ## Contributing
 
