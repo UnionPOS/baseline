@@ -5,6 +5,12 @@ brew "python"
 # https://aws.amazon.com/cli/
 brew "awscli@1"
 
+# antibody, zsh plugin manager
+brew "antibody"
+
+# mysql 5.7
+brew "mysql@5.7"
+
 # CLI for managing secrets
 # https://github.com/segmentio/chamber
 brew "chamber"

@@ -34,3 +34,6 @@ source /usr/local/share/autojump/autojump.zsh 2>/dev/null
 # load machine specific configuration
 #
 [ -f "$0.local" ] && source "$0.local"
+
+# use the mysql install from brew
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
