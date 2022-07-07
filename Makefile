@@ -11,6 +11,7 @@ bootstrap: init .vars
 	-make brew
 	sudo python -m ensurepip --upgrade
 	pip3 install virtualenv
+	git lfs install
 	make dotfiles
 .PHONY: bootstrap
 
