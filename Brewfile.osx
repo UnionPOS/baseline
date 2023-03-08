@@ -1,5 +1,5 @@
 # Python
-brew "python"
+brew "python@3.8"
 
 # Official Amazon AWS command-line interface
 # https://aws.amazon.com/cli/
