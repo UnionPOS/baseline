@@ -31,10 +31,6 @@ brew "pyenv"
 # https://github.com/pyenv/pyenv-virtualenv
 brew "pyenv-virtualenv"
 
-# cli multifactor tool
-# https://github.com/unionpos/mfa
-brew "unionpos/tap/mfa"
-
 # Couchbase client
 # https://github.com/couchbase/libcouchbase/tree/release-2.10
 brew "libcouchbase@2"
@@ -56,16 +52,5 @@ tap "homebrew/cask"
 # https://github.com/99designs/aws-vault
 cask "aws-vault"
 
-# Google Chrome web Browser
-# https://www.google.com/chrome/
-cask "google-chrome"
-
 # https://sequelpro.com
 cask "sequel-pro"
-
-# slack team chat https://slack.com
-cask "slack"
-
-# VPN client
-# https://www.tunnelblick.net
-cask "tunnelblick"
