@@ -25,7 +25,7 @@ EOF
 function is_valid_email() {
   local address=${1:-}
 
-  regex="^[a-z0-9!#\$%&'*+/=?^_\`{|}~-]+(\.[a-z0-9!#$%&'*+/=?^_\`{|}~-]+)*@union-pos.com?\$"
+  regex="^[a-z0-9!#\$%&'*+/=?^_\`{|}~-]+(\.[a-z0-9!#$%&'*+/=?^_\`{|}~-]+)*@getunion.com?\$"
 
   if [[ ! $address =~ $regex ]] ; then
       die "invalid email address"
